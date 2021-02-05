@@ -20,6 +20,7 @@ Info:
  Install
  
 pip3 install requests pysocks
+https://github.com/chemphack037/cc-mod.git
 git clone https://github.com/Leeon123/CC-attack.git
 cd CC-attack
 
